@@ -1,0 +1,120 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: 'tomorrow';
+}
+
+.flex-container{
+    flex-grow: 1;
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 100vh; /* Set the height of the flex container to fill the viewport height */
+}
+
+.left-background, .right-background{
+    width: 7%;
+    background-color: black;
+    flex-shrink: 4;
+}
+.main{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.sidebar{
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover; /* Stretch the background image to cover the entire sidebar */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: bottom;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    height:95%;
+    justify-content: center;
+    padding-bottom: 50%;
+}
+h1,h2{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.sidebar-copyright{
+    color: azure;
+    background: rgba(0, 0, 0, 0);
+    width: 100%; /* Ensure element stretches across the entire width of the sidebar */
+    text-align: center; /* Center the text horizontally */
+    font-size: smaller;
+    height: 3%
+}
+a{
+    color:azure;
+}
+a:visited{
+    color:lightslategray;
+}
+.main-info{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.introduction{
+    height:33%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+form{
+    height:66%;
+}
+.row-1, .row-2, .row-3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#create_account{
+    background-color:darkslategrey;
+    color: azure;
+    border-radius: 5px;
+
+}
+input{
+    width: 180px; 
+    background-color:beige ;
+    border-radius: 5px;
+}
+input:focus{
+    border: 3px solid blue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 2%;
+    padding-right: 5%;
+    border-radius: 50%;
+}
+fieldset{
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+@font-face {
+    font-family: 'tomorrow';
+    src: url(css/Tomorrow-Regular.ttf);
+}
+.no-bullets {
+    list-style: none; /* Remove default list-style */
+}

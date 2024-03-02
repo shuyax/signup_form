@@ -5,8 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tomorrow" type="text/css"/>
 </head>
 <body>
+    <div class="flex-container">
+        <div class="left-background"></div>
+        <div class="main">
+            <div class="sidebar" style="background-image: url('css/luke-miller-8IY9J34Mpag-unsplash.jpg');">
+                <div class="title">
+                    <h1>Welcome to Nature's Serenity:</h1> 
+                    <h2>Your Ultimate Relaxation Destination</h2>
+                </div>
+                <figcaption class="sidebar-copyright">Photo by <a href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Luke Miller</a> on <a href="https://unsplash.com/photos/a-foggy-forest-filled-with-lots-of-trees-8IY9J34Mpag?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>  
+            </div>
+            <div class="main-info">
+                <div class="introduction">To introduce the website</div>
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <legend>Join Us Today</legend>
+                        <ul class="no-bullets">
+                            <div class="row-1">
+                                <div class="row-1-1">
+                                    <li><label for="first_name">FIRST NAME</label></li>
+                                    <li><input type="text" id="first_name" name="first_name" placeholder="John" required></li>
+                                </div>
+                                <div class="row-1-2">
+                                    <li><label for="last_name">LAST NAME</label></li>
+                                    <li><input type="text" id="last_name" name="last_name" placeholder="Smith" required></li>
+                                </div>
+                            </div>
+                            <div class="row-2">
+                                <div class="row-2-1">
+                                    <li><label for="email">EMAIL</label></li>
+                                    <li><input type="email" id="email" name="email" placeholder="example@example.com" required></li>
+                                </div>
+                                <div class="row-2-2">
+                                    <li><label for="phone">PHONE NUMBER</label></li>
+                                    <li><input type="text" id="phone" name="phone" placeholder="888-888-8888" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></li>
+                                </div>
+                            </div>
+                            <div class="row-3">
+                                <div class="row-3-1">
+                                    <li><label for="password">PASSWORD</label></li>
+                                    <li><input type="password" id="password" name="password" required></li>
+                                </div>
+                                <div class="row-3-2">
+                                    <li><label for="password_verification">CONFIRM PASSWORD</label></li>
+                                    <li><input type="password" id="password_verification" name="password_verification" required></li>
+                                </div>
+                            </div>
+                            <li class="button"><button type="submit" id="create_account">Create Account</button></li>
+                        </ul>
+                    </fieldset>
+                    <ul class="no-bullets">
+                        <li >Already have an account? <a href="index.html">Log in</a></li>
+                    </ul>
+                </form>
+
+            </div>
+        </div>
+        <div class="right-background"></div>
+    </div>
     
 </body>
 </html>
+
+
